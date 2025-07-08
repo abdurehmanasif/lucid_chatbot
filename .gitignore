@@ -1,0 +1,9 @@
+History/
+.env
+*.json
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.csv
