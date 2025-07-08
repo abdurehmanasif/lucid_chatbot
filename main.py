@@ -162,14 +162,6 @@ def internal_error(error):
 
 
 if __name__ == "__main__":
-    # Validate required environment variables
-    required_env_vars = ["GOOGLE_API_KEY", "TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN"]
-    missing_vars = [var for var in required_env_vars if not os.getenv(var)]
-
-    if missing_vars:
-        logger.error(f"Missing required environment variables: {missing_vars}")
-        exit(1)
-
     # Initialize chatbot on startup
     try:
         chatbot = get_chatbot()
